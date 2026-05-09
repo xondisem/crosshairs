@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои прицелы VALORANT</title>
+    <link rel="icon" type="image/x-icon" href="SiteIcon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="copyToast" class="copy-toast" role="status" aria-live="polite">Прицел скопирован</div>
+
+<header class="top">
+    <div>
+        <h1>Мои прицелы VALORANT</h1>
+        <p class="subtitle"></p>
+    </div>
+
+    <button id="themeToggle" title="Сменить тему">🌙</button>
+</header>
+
+<main class="crosshairs">
+
+    <div class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h2>Крестик</h2>
+                <p>Универсальный прицел</p>
+            </div>
+
+            <div class="crosshair-preview">
+                <img src="Images/Krestik.png" alt="Основной прицел">
+            </div>
+
+            <button class="preview-btn" onclick="openPreview('Images/preview.gif')" title="Предпросмотр">
+                ▶
+                
+            </button>
+        </div>
+
+        <button onclick="copy(this)" data-code="0;P;c;5;o;1;d;1;z;3;a;1;f;0">
+            Скопировать
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h2>Точка</h2>
+                <p>Для стрельбы по головам</p>
+            </div>
+
+            <div class="crosshair-preview">
+                <img src="Images/Tochka.png" alt="Точный прицел">
+            </div>
+
+            <button class="preview-btn" onclick="openPreview('Images/preview.gif')" title="Предпросмотр">
+                ▶
+                
+            </button>
+        </div>
+
+        <button onclick="copy(this)" data-code="0;P;c;1;o;0.5;d;1;z;2;a;1;f;0">
+            Скопировать
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h2>Калм аим</h2>
+                <p>Компактный прицел без лишних деталей</p>
+            </div>
+
+            <div class="crosshair-preview">
+                <img src="Images/Calm_aim.png" alt="Минимал прицел">
+            </div>
+
+            <button class="preview-btn" onclick="openPreview('Images/preview.gif')" title="Предпросмотр">
+                ▶
+                
+            </button>
+        </div>
+
+        <button onclick="copy(this)" data-code="0;P;c;3;o;0.7;d;1;z;1;a;1;f;0">
+            Скопировать
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <div class="card-text">
+                <h2>Крестик с дыркой</h2>
+                <p>Хорошо заметен на светлых картах</p>
+            </div>
+
+            <div class="crosshair-preview">
+                <img src="Images/Krestik_s_dirkoy.png" alt="Контрастный прицел">
+            </div>
+
+            <button class="preview-btn" onclick="openPreview('Images/preview.gif')" title="Предпросмотр">
+                ▶
+                
+            </button>
+        </div>
+
+        <button onclick="copy(this)" data-code="0;P;c;6;o;1;d;1;z;4;a;1;f;0">
+            Скопировать
+        </button>
+    </div>
+
+</main>
+
+
+<div id="previewModal" class="preview-modal">
+    <div class="preview-window">
+        <button class="close-preview" onclick="closePreview()">✕</button>
+        <img id="previewGif" src="" alt="Preview GIF">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
